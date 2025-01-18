@@ -21,7 +21,14 @@ int main() {
 
 
 
-// printf mostra menssagem na tela pedindo que o usuario entre com o dado. scanf pega esse dado e guarda na variável.
+// printf mostra uma menssagem na tela pedindo ao usuário entrar com o dado. scanf pega esse dado e guarda na variável.
+
+printf("**********************************************************************************\n"); 
+
+   
+ printf(" Cadastro\n "); 
+ printf("\n"); 
+   
 
  printf(" Digite a letra do  Estado: "); 
    scanf("%c%*c", &Estado);
@@ -42,18 +49,22 @@ printf(" Digite a área da Cidade: ");
    scanf("%f%*c", &Pib);
 
   printf(" Digite o o número de pontos turísticos da Cidade: "); 
-   scanf("%f%*c", &PontosTuristicos);
+   scanf("%d%*c", &PontosTuristicos);
 
 
  DensidadePopulacional = Populacao /  Area;
 
- PibPerCapito = Pib / Populacao;
-
+  PibPerCapito = Pib / Populacao;
+ printf("\n"); 
+ printf("\n"); 
 // printf mostra a saida dos dados e sua formatação.
-printf(" Estado: %c\n Cidade: %c\n População: %d\n Area: %f\n  Densidade Populacional: %f\n  PIB: %f\n PIB Per Capito: %f\n Pontos Turísticos: %d\n ",  Estado,  Cidade, Populacao, Area, DensidadePopulacional, Pib, PibPerCapito,  PontosTuristicos  ); 
+printf(" Estado: %c\n Codigo da Carta: %s\n Cidade: %s\n População: %d Pessoas \n Area: %.2f km²\n Densidade Populacional: %.3f Pessoas\n PIB: R$ %.2f\n PIB Per Capito: R$ %.2f\n Pontos Turísticos: %d\n ",  Estado, CodCarta,  Cidade, Populacao, Area, DensidadePopulacional, Pib, PibPerCapito,  PontosTuristicos  ); 
 
 //Printf mosta a mensagem dados cadastrado com sucesso.
+
+printf("\n"); 
 printf("Dados cadastrados com sucesso.\n"); 
+printf("**********************************************************************************\n"); 
 
 //encerra a execução de uma função e retorna o controle para a função de chamada. 
     return 0;
