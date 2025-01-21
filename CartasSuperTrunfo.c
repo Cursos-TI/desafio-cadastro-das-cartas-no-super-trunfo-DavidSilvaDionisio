@@ -18,7 +18,7 @@ int main() {
 printf("**********************************************************************************\n"); 
 
    
- printf(" Cadastro da Primeira Carta\n "); 
+ printf(" Cadastro da Primeira Carta.\n "); 
  printf("\n"); 
    
 
@@ -40,14 +40,16 @@ printf(" Digite a área da Cidade: ");
    printf(" Digite o PIB: "); 
    scanf("%f%*c", &Pib1);
 
-  printf(" Digite o o número de pontos turísticos da Cidade:/n "); 
+  printf(" Digite o o número de pontos turísticos da Cidade: "); 
    scanf("%d%*c", &PontosTuristicos1);
 
-
+printf(" \n "); 
 printf(" Primeira Carta cadastrada com sucesso!\n "); 
+printf(" \n "); 
 printf("**********************************************************************************\n"); 
-printf(" Cadastro da segunda Carta\n "); 
- printf("\n"); 
+printf(" \n "); 
+printf(" Cadastro da segunda Carta.\n "); 
+printf("\n"); 
    
 
 printf(" Digite a letra do  Estado: "); 
@@ -71,7 +73,10 @@ printf(" Digite a área da Cidade: ");
   printf(" Digite o o número de pontos turísticos da Cidade:/n "); 
    scanf("%d%*c", &PontosTuristicos2);
 
-   printf(" Segunda  Carta cadastrada com sucesso!\n "); 
+
+printf("\n"); 
+printf(" Segunda  Carta cadastrada com sucesso!\n "); 
+printf("\n"); 
 printf("**********************************************************************************\n"); 
 printf("\n"); 
 
