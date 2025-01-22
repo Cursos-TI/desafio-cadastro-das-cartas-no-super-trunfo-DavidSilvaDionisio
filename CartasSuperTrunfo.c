@@ -18,7 +18,7 @@ int main() {
 printf("**********************************************************************************\n"); 
 
    
- printf(" Cadastro da Primeira Carta.\n "); 
+ printf(" Primeira carta, inicie o jogo! \n "); 
  printf("\n"); 
    
 
@@ -44,11 +44,11 @@ printf(" Digite a área da Cidade: ");
    scanf("%d%*c", &PontosTuristicos1);
 
 printf(" \n "); 
-printf(" Primeira Carta cadastrada com sucesso!\n "); 
+printf(" Dados  coletados com sucesso \n "); 
 printf(" \n "); 
 printf("**********************************************************************************\n"); 
 printf(" \n "); 
-printf(" Cadastro da segunda Carta.\n "); 
+printf(" Segunda Carta, sua vez!\n "); 
 printf("\n"); 
    
 
@@ -75,15 +75,42 @@ printf(" Digite a área da Cidade: ");
 
 
 printf("\n"); 
-printf(" Segunda  Carta cadastrada com sucesso!\n "); 
+printf(" Dados coletados com sucesso!\n "); 
 printf("\n"); 
 printf("**********************************************************************************\n"); 
 printf("\n"); 
+DensidadePopulacional1 = Populacao1 /  Area1;
+
+PibPerCapito1 = Pib1 / Populacao1;
+
+
+DensidadePopulacional2 = Populacao2 /  Area2;
+
+PibPerCapito2 = Pib2 / Populacao2;
+
+if (PibPerCapito1 > PibPerCapito2)
+{
+ printf("Carta Vencedora > %s\n ",CodCarta1);
+   
+}else{
+
+printf("Carta Vencedora > %s\n ",CodCarta2);
+   
+
+}
+
+
+
+
+
+
+
+
+   
+
+
 
 /*
- DensidadePopulacional = Populacao /  Area;
-
-  PibPerCapito = Pib / Populacao;
  printf("\n"); 
  printf("\n"); 
 // printf mostra a saida dos dados e sua formatação.
