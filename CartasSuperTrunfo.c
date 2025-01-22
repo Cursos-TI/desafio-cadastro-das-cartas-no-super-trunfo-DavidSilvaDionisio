@@ -90,13 +90,13 @@ PibPerCapito2 = Pib2 / Populacao2;
 
 if (PibPerCapito1 > PibPerCapito2)
 {
- printf( "Carta Vencedora > %s\n ",CodCarta1);
+ printf( "Carta Vencedora > %s ",CodCarta1);
 
  printf(" \n ");
    
 }else{
 
-printf(" Carta Vencedora > %s\n ",CodCarta2);
+printf(" Carta Vencedora > %s ",CodCarta2);
 
 printf(" \n ");
 
