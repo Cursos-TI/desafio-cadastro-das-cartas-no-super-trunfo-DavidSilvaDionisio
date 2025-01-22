@@ -99,30 +99,6 @@ printf("Carta Vencedora > %s\n ",CodCarta2);
 
 }
 
-
-
-
-
-
-
-
-   
-
-
-
-/*
- printf("\n"); 
- printf("\n"); 
-// printf mostra a saida dos dados e sua formatação.
-printf(" Estado: %c\n Codigo da Carta: %s\n Cidade: %s\n População: %d Pessoas \n Area: %.2f km²\n Densidade Populacional: %.3f Pessoas\n PIB: R$ %.2f\n PIB Per Capito: R$ %.2f\n Pontos Turísticos: %d\n ",  Estado, CodCarta,  Cidade, Populacao, Area, DensidadePopulacional, Pib, PibPerCapito,  PontosTuristicos  ); 
-
-//Printf mosta a mensagem dados cadastrado com sucesso.
-
-printf("\n"); 
-printf("Dados cadastrados com sucesso.\n"); 
-printf("**********************************************************************************\n"); 
-
-//encerra a execução de uma função e retorna o controle para a função de chamada. 
-    return 0;
-    */
+return 0;
+    
 }
