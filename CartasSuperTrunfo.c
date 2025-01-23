@@ -23,7 +23,7 @@ printf(" Jogo iniciado.\n ");
 printf(" **********************************\n ");
 printf(" \n ");
 
-printf(" Digite o nome do Estado. ");  
+printf("Digite o nome do Estado. ");  
 scanf ("%c%*c", &Estado1);
 
 printf(" Digite o código da cidade. ");  
@@ -33,9 +33,8 @@ scanf ("%s%*c", &CodCarta1);
 printf(" Digite o nome da Cidade. ");  
 scanf ("%s%*c", &Cidade1);
 
-
-printf(" Digite o números populacional da cidade. ");  
-scanf (" %d%*c ", &Populacao1);
+printf(" Digite o número de pessoas que residem na Cidade. ");  
+scanf ("%d%*c", &Populacao1);
 
 printf(" Digite o número de pontos turísticos da cidade. ");  
 scanf ("%d%*c", &PontoTuristico1);
