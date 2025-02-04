@@ -44,7 +44,7 @@ int main() {   // Função principal.
    switch (Num1)
 {
 
-case 1:
+   case 1:
    
 printf("Jogador 1, digite o seu nome:"); 
 scanf("%s%*c", &NomeJogador1);
@@ -70,14 +70,11 @@ printf("\n" );
 printf("Entre com os dados da segunda carta.\n");;  
 printf("\n" );  
 
-
 printf("Digite o nome do Estado.\n");  
 scanf ("%c%*c", &Estado2);
 
-
 printf("Digite o nome da Cidade.\n");  
 scanf ("%s%*c", &Cidade2);
-
 
 printf("Digite codigo da Cidade.\n");  
 scanf ("%s%*c", &CodCarta2);
@@ -85,31 +82,32 @@ scanf ("%s%*c", &CodCarta2);
 printf("Digite o número de pessoas que moram na Cidade.\n");  
 scanf ("%d%*c", &Populacao2);
 
-if (Populacao1 > Populacao2){
+   if (Populacao1 > Populacao2){
 
- printf("\n");  
- printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
- printf("\n");  
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
+printf("\n");  
  
-}else if(Populacao1 < Populacao2){
+  }else if(Populacao1 < Populacao2){
 
- printf("\n");  
- printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
- printf("\n");
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
+printf("\n");
   
-}else{
+  }else{
 
- printf("\n");  
- printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
- printf("\n");  
+printf("\n");  
+printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
+printf("\n"); 
+
 }
 
-break;
+  break;
 
 //-----------------------------------------------------------------------------------------
    
 
-case 2:
+  case 2:
    
 
 printf(" Jogador 1, digite o seu nome: "); 
@@ -153,19 +151,19 @@ printf("Digite o número de pontos turísticos da cidade.\n");
 scanf ("%d%*c", &PontoTuristico2);
 
 
-if (PontoTuristico1 > PontoTuristico2){
+  if (PontoTuristico1 > PontoTuristico2){
 
  printf("\n");  
  printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
  printf("\n");  
  
-}else if(PontoTuristico1 < PontoTuristico2){
+  }else if(PontoTuristico1 < PontoTuristico2){
 
  printf("\n");  
  printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
  printf("\n"); 
 
-}else{
+  }else{
 
  printf("\n");  
  printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
@@ -173,7 +171,7 @@ if (PontoTuristico1 > PontoTuristico2){
 
 }
 
-break;
+   break;
 
 //-----------------------------------------------------------------------------------------
 
