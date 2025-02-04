@@ -46,7 +46,7 @@ int main() {   // Função principal.
 
 case 1:
    
-printf(" Jogador 1, digite o seu nome: "); 
+printf("Jogador 1, digite o seu nome:"); 
 scanf("%s%*c", &NomeJogador1);
 printf("\n" );
 printf("Entre com os dados da primeira carta.\n");;  
