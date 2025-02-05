@@ -420,8 +420,7 @@ printf("\n");
   
 case 7:   // Comparando todos os itens.
 
-Ponto1 = 0;
-Ponto2 = 0;
+
 
 printf("Jogador 1, digite o seu nome: "); 
 scanf("%s%*c", &NomeJogador1);
@@ -452,8 +451,7 @@ scanf ("%f%*c", &PIB1);
 
 //tratamento de dados.
 
-  PIB_Percapito1 = PIB1 / Populacao1;
-  DensidadePopulacional1 = Populacao1 / Area1;
+  
 
 printf("\n"); 
 printf(">>>>>>>>>  Super Trunfo. <<<<<<<<<\n");
@@ -472,7 +470,7 @@ printf("Digite o nome do Estado.\n");
 scanf ("%c%*c", &Estado2);
 
 printf("Digite o nome da Cidade.\n");  
-scanf ("%s%*c", &Cidade2);
+scanf ("%s", &Cidade2);
 
 printf("Digite o código da cidade.\n");  
 scanf ("%s%*c", &CodCarta2);
@@ -490,99 +488,7 @@ printf("Digite O PIB da Cidade.\n");
 scanf ("%f%*c", &PIB2);
 printf("\n");  
 
-  //tratamento de dados.
-
-  PIB_Percapito2 = PIB2 / Populacao2;
-  DensidadePopulacional2 = Populacao2 / Area2;
-
-// função para a comparação das cartas e saída de dados.
-
-  if(Populacao1 > Populacao2){
-
-   Ponto1 = Ponto1++;
-
-printf("Carta %s venceu.\n", CodCarta1); 
-   
-  }else{
-
-   Ponto2 = Ponto2++;
-
-printf("Carta %s venceu.\n", CodCarta2);
-    
-}
-
-  if(PontoTuristico1 > PontoTuristico2){
-
-    Ponto1 = Ponto1++;
-
-printf("Carta %s venceu.\n", CodCarta1); 
- 
-  }else{
-
-   Ponto2 = Ponto2++;
-
-printf("Carta %s venceu.\n", CodCarta2);
-   
-}
-
-  if( Area2 >  Area2){
-
-    Ponto1 = Ponto1++;
-
-printf("Carta %s venceu.\n", CodCarta1);  
-  
-  }else{
-
-   Ponto2 = Ponto2++;
-
-printf("Carta %s venceu.\n", CodCarta2);
-
-}
-
-  if(DensidadePopulacional1 < DensidadePopulacional2){
-
-    Ponto1 = Ponto1++;
-
-printf("Carta %s venceu.\n", CodCarta1);  
-printf("\n");
-
-  }else{
-
-   Ponto2 = Ponto2++;
-
-printf("Carta %s venceu.\n", CodCarta2);
-
-}
-
-  if(PIB1 > PIB2){
-
-   Ponto1 = Ponto1++;
-
-printf("Carta %s venceu.\n", CodCarta1);  
- 
- }else{
-
-   Ponto2 = Ponto2++;
-
-printf("Carta %s venceu.\n", CodCarta2);
- 
-}
-
-  if(Ponto1 > Ponto2){
-
-printf("\n");  
-printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
-printf("\n");  
- 
- }else{
-
-printf("\n"); 
-printf("Parabéns %s, você Ganhou o jogo!\n", NomeJogador2);  
-printf("\n");
-
-}
-
-  break;
+break;
 
 //----------------------------------------------------------------------------------------------------------
 
