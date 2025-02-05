@@ -275,21 +275,21 @@ printf("\n");
 printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
 printf("\n");  
  
-  }else if(PIB1 < PIB2){
+ }else if(PIB1 < PIB2){
 
- printf("\n");  
- printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
- printf("\n");  
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
+printf("\n");  
 
-  }else{
+ }else{
 
- printf("\n");  
- printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
- printf("\n"); 
+printf("\n");  
+printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
+printf("\n"); 
 
 }
 
-   break;
+  break;
 
 //----------------------------------------------------------------------------------------------------------
    
@@ -351,7 +351,7 @@ printf("\n");
 
 }
 
-   break;
+  break;
 
 //----------------------------------------------------------------------------------------------------------
   
@@ -394,13 +394,13 @@ printf("Digite a Densidade populacional.\n");
 scanf ("%f%*c", &DensidadePopulacional2);  
 
 
-   if(DensidadePopulacional1 < DensidadePopulacional2){
+  if(DensidadePopulacional1 < DensidadePopulacional2){
 
- printf("\n");  
- printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
- printf("\n");  
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
+printf("\n");  
  
-  }else if( DensidadePopulacional1 >  DensidadePopulacional2){
+ }else if( DensidadePopulacional1 >  DensidadePopulacional2){
 
 printf("\n");  
 printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
@@ -414,7 +414,7 @@ printf("\n");
 
 }
 
-   break;
+  break;
 
 //----------------------------------------------------------------------------------------------------------
   
@@ -531,11 +531,11 @@ printf("Carta %s venceu.\n", CodCarta2);
 
 }
 
-   if(DensidadePopulacional1 < DensidadePopulacional2){
+  if(DensidadePopulacional1 < DensidadePopulacional2){
 
     Ponto1 = Ponto1++;
- printf("Carta %s venceu.\n", CodCarta1);  
-   printf("\n");
+printf("Carta %s venceu.\n", CodCarta1);  
+printf("\n");
 
   }else{
 
@@ -544,25 +544,25 @@ printf("Carta %s venceu.\n", CodCarta2);
 
 }
 
-   if(PIB1 > PIB2){
+  if(PIB1 > PIB2){
 
    Ponto1 = Ponto1++;
- printf("Carta %s venceu.\n", CodCarta1);  
+printf("Carta %s venceu.\n", CodCarta1);  
  
-  }else{
+ }else{
 
    Ponto2 = Ponto2++;
 printf("Carta %s venceu.\n", CodCarta2);
  
 }
 
-   if(Ponto1 > Ponto2){
+  if(Ponto1 > Ponto2){
 
 printf("\n");  
 printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
 printf("\n");  
  
-  }else{
+ }else{
 
 printf("\n"); 
 printf("Parabéns %s, você Ganhou o jogo!\n", NomeJogador2);  
