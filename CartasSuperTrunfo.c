@@ -207,13 +207,13 @@ scanf ("%s%*c", &CodCarta2);
 printf("Digite a área da cidade.\n");  
 scanf ("%f%*c", &Area2);
 
-  if(Area1 > Area2){
+  if (Area1 > Area2){
 
 printf("\n");  
 printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
 printf("\n");  
  
- }else if(Area1 < Area2){
+ }else if (Area1 < Area2){
 
 printf("\n");  
 printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
@@ -486,7 +486,28 @@ scanf ("%f%*c", &Area2);
 
 printf("Digite O PIB da Cidade.\n");  
 scanf ("%f%*c", &PIB2);
+printf("\n"); 
+
+if (Populacao1 > Populacao2)
+{
+
 printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
+printf("\n");  
+ 
+} else if(Populacao1 < Populacao2){
+
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
+printf("\n");
+  
+}else{
+
+printf("\n");  
+printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
+printf("\n"); 
+
+}
 
 break;
 
