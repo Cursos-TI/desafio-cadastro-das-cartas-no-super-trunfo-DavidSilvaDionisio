@@ -13,14 +13,13 @@ int main() {   // Função principal.
    int Populacao2, PontoTuristico2, Ponto2;    
    float  Area2, DensidadePopulacional2, PIB_Percapito2, PIB2; 
 
- // variavel de controle.
+ // variavel de controle Switch-case. 
 
    int Num1;
 
- // Inicialiacao de variaveis.
+ // Inicialiacao de variaveis da estrutura encadeada  If-else do case 8.
 
-   Ponto1 = 0;
-   Ponto2 = 0;
+   
 
 
 printf(">>>>>>>>> Super trunfo. <<<<<<<<<\n");
@@ -35,7 +34,8 @@ printf("Digite 4, para comparação do PIB.\n");
 printf("Digite 5, para comparação PIB Percapito.\n");
 printf("Digite 6, para comparação da Densidade Populacional.\n");
 printf("Digite 7, para Comparação de todos o itens.\n");
-printf("Digite 8, sair.\n");
+printf("Digite 8, para ver o manual do jogo.\n");
+printf("Digite 9, sair.\n");
 scanf("%d%*c", &Num1);
 
 
@@ -44,7 +44,7 @@ scanf("%d%*c", &Num1);
    switch (Num1)
 {
 
-case 1:
+case 1:  // maior número de pessoas da cidade.
    
 printf("Jogador 1, digite o seu nome:"); 
 scanf("%s%*c", &NomeJogador1);
@@ -107,7 +107,7 @@ printf("\n");
 //----------------------------------------------------------------------------------------------------------
    
 
-case 2:
+case 2:   // maior número de pontos turísticos.
    
 printf("Jogador 1, digite o seu nome:"); 
 scanf("%s%*c", &NomeJogador1);
@@ -169,7 +169,7 @@ printf("\n");
 
 //----------------------------------------------------------------------------------------------------------
 
-case 3:
+case 3:   // maior área da cidade.
    
 printf("Jogador 1, digite o seu nome:"); 
 scanf("%s%*c", &NomeJogador1);
@@ -231,7 +231,7 @@ printf("\n");
 
 //----------------------------------------------------------------------------------------------------------
  
-case 4:
+case 4:   // maior PIB da cidade.
    
 printf("Jogador 1, digite o seu nome:"); 
 scanf("%s%*c", &NomeJogador1);
@@ -293,7 +293,7 @@ printf("\n");
 
 //----------------------------------------------------------------------------------------------------------
    
-case 5:
+case 5:   // maior PIB Percapito da cidade.
    
 printf("Jogador 1, digite o seu nome:"); 
 scanf("%s%*c", &NomeJogador1);
@@ -355,7 +355,7 @@ printf("\n");
 
 //----------------------------------------------------------------------------------------------------------
   
-case 6:
+case 6:   // Menor densidade populacional da cidade.
 
 printf(" Jogador 1, digite o seu nome: "); 
 scanf("%s%*c", &NomeJogador1);
@@ -418,9 +418,12 @@ printf("\n");
 
 //----------------------------------------------------------------------------------------------------------
   
-case 7:
+case 7:   // Comparando todos os itens.
 
-printf("Jogador 1, digite o seu nome:"); 
+Ponto1 = 0;
+Ponto2 = 0;
+
+printf("Jogador 1, digite o seu nome: "); 
 scanf("%s%*c", &NomeJogador1);
 printf("\n" );
 printf("Entre com os dados da primeira carta.\n");;  
@@ -489,7 +492,7 @@ printf("\n");
 
   //tratamento de dados.
 
-  PIB_Percapito1 = PIB2 / Populacao2;
+  PIB_Percapito2 = PIB2 / Populacao2;
   DensidadePopulacional2 = Populacao2 / Area2;
 
 // função para a comparação das cartas e saída de dados.
@@ -497,6 +500,7 @@ printf("\n");
   if(Populacao1 > Populacao2){
 
    Ponto1 = Ponto1++;
+
 printf("Carta %s venceu.\n", CodCarta1); 
    
   }else{
@@ -510,11 +514,13 @@ printf("Carta %s venceu.\n", CodCarta2);
   if(PontoTuristico1 > PontoTuristico2){
 
     Ponto1 = Ponto1++;
+
 printf("Carta %s venceu.\n", CodCarta1); 
  
   }else{
 
    Ponto2 = Ponto2++;
+
 printf("Carta %s venceu.\n", CodCarta2);
    
 }
@@ -522,11 +528,13 @@ printf("Carta %s venceu.\n", CodCarta2);
   if( Area2 >  Area2){
 
     Ponto1 = Ponto1++;
+
 printf("Carta %s venceu.\n", CodCarta1);  
   
   }else{
 
    Ponto2 = Ponto2++;
+
 printf("Carta %s venceu.\n", CodCarta2);
 
 }
@@ -534,12 +542,14 @@ printf("Carta %s venceu.\n", CodCarta2);
   if(DensidadePopulacional1 < DensidadePopulacional2){
 
     Ponto1 = Ponto1++;
+
 printf("Carta %s venceu.\n", CodCarta1);  
 printf("\n");
 
   }else{
 
    Ponto2 = Ponto2++;
+
 printf("Carta %s venceu.\n", CodCarta2);
 
 }
@@ -547,11 +557,13 @@ printf("Carta %s venceu.\n", CodCarta2);
   if(PIB1 > PIB2){
 
    Ponto1 = Ponto1++;
+
 printf("Carta %s venceu.\n", CodCarta1);  
  
  }else{
 
    Ponto2 = Ponto2++;
+
 printf("Carta %s venceu.\n", CodCarta2);
  
 }
@@ -568,17 +580,27 @@ printf("\n");
 printf("Parabéns %s, você Ganhou o jogo!\n", NomeJogador2);  
 printf("\n");
 
+}
+
   break;
 
 //----------------------------------------------------------------------------------------------------------
 
-case 8:
+case 8:  // Manual do jogo.
+
+printf("Manual do jogo...\n");
+
+  break;
+
+//----------------------------------------------------------------------------------------------------------
+
+case 9:  // Saindo do jogo.
 
 printf("Saindo...");
 
   break;
 
-default:
+default:  // Entrada de dados invalida.
 
 printf("Opção invalidada.");
 
@@ -590,11 +612,13 @@ printf(">>>>>>>>> Super trunfo. <<<<<<<<<\n");
 printf("**********************************************************\n");
 printf("Fim do jogo.\n");
 
-}
-
 return 0;
 
-  }
+}
+
+
+
+  
    
 //-------------------------------------------------------------------------------------------------------------------
    
