@@ -7,11 +7,11 @@ int main() {   // Função principal.
 
    char Estado1, Cidade1 [20] , CodCarta1 [3], NomeJogador1 [20] ;
    int Populacao1, PontoTuristico1, Ponto1;
-   float Area1, DensidadePopulacional1, PIB_Percapito1, PIB1;
+   int Area1, DensidadePopulacional1, PIB_Percapito1, PIB1;
 
    char Estado2, CodCarta2 [3], Cidade2 [20], NomeJogador2 [20];
    int Populacao2, PontoTuristico2, Ponto2;    
-   float  Area2, DensidadePopulacional2, PIB_Percapito2, PIB2; 
+   int  Area2, DensidadePopulacional2, PIB_Percapito2, PIB2; 
 
  // variavel de controle Switch-case. 
 
@@ -422,92 +422,12 @@ case 7:   // Comparando todos os itens.
 
 
 
-printf("Jogador 1, digite o seu nome: "); 
-scanf("%s%*c", &NomeJogador1);
-printf("\n" );
-printf("Entre com os dados da primeira carta.\n");;  
-printf("\n" );  
 
-printf("Digite o nome do Estado.\n");  
-scanf ("%c%*c", &Estado1);
 
-printf("Digite o nome da Cidade.\n");  
-scanf ("%s%*c", &Cidade1);
 
-printf("Digite o código da cidade.\n");  
-scanf ("%s%*c", &CodCarta1);
 
-printf("Digite o número de pessoas que residem na Cidade.\n");  
-scanf ("%d%*c", &Populacao1);
 
-printf("Digite o número de pontos turísticos da cidade.\n");  
-scanf ("%d%*c", &PontoTuristico1);
 
-printf("Digite a área da cidade.\n");  
-scanf ("%f%*c", &Area1);
-
-printf("Digite O PIB da Cidade.\n");  
-scanf ("%f%*c", &PIB1);
-
-//tratamento de dados.
-
-  
-
-printf("\n"); 
-printf(">>>>>>>>>  Super Trunfo. <<<<<<<<<\n");
-printf("**********************************************************\n");
-printf("\n"); 
-
-//Entrada e amarzenamento de dados.
-
-printf("Jogador 2, digite o seu nome:"); 
-scanf("%s%*c", &NomeJogador2);
-printf("\n" );
-printf("Entre com os dados da segunda carta.\n");;  
-printf("\n" );  
-
-printf("Digite o nome do Estado.\n");  
-scanf ("%c%*c", &Estado2);
-
-printf("Digite o nome da Cidade.\n");  
-scanf ("%s", &Cidade2);
-
-printf("Digite o código da cidade.\n");  
-scanf ("%s%*c", &CodCarta2);
-
-printf("Digite o número de pessoas que residem na Cidade.\n");  
-scanf ("%d%*c", &Populacao2);
-
-printf("Digite o número de pontos turísticos da cidade.\n");  
-scanf ("%d%*c", &PontoTuristico2);
-
-printf( "Digite a área da cidade.\n");  
-scanf ("%f%*c", &Area2);
-
-printf("Digite O PIB da Cidade.\n");  
-scanf ("%f%*c", &PIB2);
-printf("\n"); 
-
-if (Populacao1 > Populacao2)
-{
-
-printf("\n");  
-printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
-printf("\n");  
- 
-} else if(Populacao1 < Populacao2){
-
-printf("\n");  
-printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
-printf("\n");
-  
-}else{
-
-printf("\n");  
-printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
-printf("\n"); 
-
-}
 
 break;
 
