@@ -7,11 +7,11 @@ int main() {   // Função principal.
 
    char Estado1, Cidade1 [20] , CodCarta1 [3], NomeJogador1 [20] ;
    int Populacao1, PontoTuristico1, Ponto1;
-   int Area1, DensidadePopulacional1, PIB_Percapito1, PIB1;
+   float Area1, DensidadePopulacional1, PIB_Percapito1, PIB1;
 
    char Estado2, CodCarta2 [3], Cidade2 [20], NomeJogador2 [20];
    int Populacao2, PontoTuristico2, Ponto2;    
-   int  Area2, DensidadePopulacional2, PIB_Percapito2, PIB2; 
+     float Area2, DensidadePopulacional2, PIB_Percapito2, PIB2; 
 
  // variavel de controle Switch-case. 
 
@@ -421,12 +421,164 @@ printf("\n");
 case 7:   // Comparando todos os itens.
 
 
+// printf mostra uma menssagem na tela pedindo ao usuário entrar com o dado. scanf pega esse dado e guarda na variável.
+
+printf("**********************************************************************************\n"); 
+
+   
+ printf(" Cadastro da Primeira Carta\n "); 
+ printf("\n"); 
+   
+
+ printf(" Digite a letra do  Estado: "); 
+   scanf("%c%*c", &Estado1);
+
+   printf(" Digite o código da carta: "); 
+   scanf("%s%*c", &CodCarta1);
+
+printf(" Digite o nome da Cidade: "); 
+  scanf("%s%*c",Cidade1);
+
+  printf(" Digite a População da Cidade: "); 
+   scanf("%d%*c", &Populacao1);
+
+printf(" Digite a área da Cidade: "); 
+   scanf("%f%*c", &Area1);
+
+   printf(" Digite o PIB: "); 
+   scanf("%f%*c", &PIB1);
+
+  printf(" Digite o o número de pontos turísticos da Cidade:/n "); 
+   scanf("%d%*c", &PontoTuristico1);
+
+
+printf(" Primeira Carta cadastrada com sucesso!\n "); 
+printf("**********************************************************************************\n"); 
+printf(" Cadastro da segunda Carta\n "); 
+ printf("\n"); 
+   
+
+printf(" Digite a letra do  Estado: "); 
+   scanf("%c%*c", &Estado2);
+
+   printf(" Digite o código da carta: "); 
+   scanf("%s%*c", &CodCarta2);
+
+printf(" Digite o nome da Cidade: "); 
+  scanf("%s%*c",Cidade2);
+
+  printf(" Digite a População da Cidade: "); 
+   scanf("%d%*c", &Populacao2);
+
+printf(" Digite a área da Cidade: "); 
+   scanf("%f%*c", &Area2);
+
+   printf(" Digite o PIB: "); 
+   scanf("%f%*c", &PIB2);
+
+  printf(" Digite o o número de pontos turísticos da Cidade:/n "); 
+   scanf("%d%*c", &PontoTuristico2);
+
+   printf(" Segunda  Carta cadastrada com sucesso!\n "); 
+printf("**********************************************************************************\n"); 
+printf("\n"); 
+
+DensidadePopulacional1 = Populacao1 /  Area1;
+PIB_Percapito1 = PIB1 / Populacao1;
+ printf("\n"); 
+ printf("\n"); 
+// printf mostra a saida dos dados e sua formatação.
+printf(" Estado: %c\n Codigo da Carta: %s\n Cidade: %s\n População: %d Pessoas \n Area: %.2f km²\n Densidade Populacional: %.3f Pessoas\n PIB: R$ %.2f\n PIB Per Capito: R$ %.2f\n Pontos Turísticos: %d\n ",  Estado1, CodCarta1,  Cidade1, Populacao1, Area1, DensidadePopulacional1, PIB1, PIB_Percapito1,  PontoTuristico1); 
 
 
 
+DensidadePopulacional2 = Populacao2 /  Area2;
+PIB_Percapito2 = PIB2 / Populacao2;
+ printf("\n"); 
+ printf("\n"); 
+// printf mostra a saida dos dados e sua formatação.
+printf("Estado: %c\n Codigo da Carta: %s\n Cidade: %s\n População: %d Pessoas \n Area: %.2f km²\n Densidade Populacional: %.3f Pessoas\n PIB: R$ %.2f\n PIB Per Capito: R$ %.2f\n Pontos Turísticos: %d\n",  Estado2, CodCarta2,  Cidade2, Populacao2, Area2, DensidadePopulacional2, PIB2, PIB_Percapito2, PontoTuristico2); 
+
+if(Populacao1 > Populacao2){
+
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
+printf("\n");  
+ 
+   }else if(Populacao1 < Populacao2){
+
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
+printf("\n");
+  
+   }else{
+
+printf("\n");  
+printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
+printf("\n"); 
+
+}
+
+if(PontoTuristico1 > PontoTuristico2){
+
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
+printf("\n");  
+ 
+ }else if(PontoTuristico1 < PontoTuristico2){
+
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
+printf("\n"); 
+
+ }else{
+
+printf("\n");  
+printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
+printf("\n");  
+
+}
+
+if (Area1 > Area2){
+
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
+printf("\n");  
+ 
+ }else if (Area1 < Area2){
+
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
+printf("\n"); 
+
+ }else{
+
+printf("\n");  
+printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
+printf("\n");  
+
+}
 
 
+ if(PIB1 > PIB2){
 
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador1);  
+printf("\n");  
+ 
+ }else if(PIB1 < PIB2){
+
+printf("\n");  
+printf("Parabéns %s, você Venceu!!\n", NomeJogador2);  
+printf("\n");  
+
+ }else{
+
+printf("\n");  
+printf("Parabéns %s e %s, vocês Empataram!!\n", NomeJogador1, NomeJogador2);  
+printf("\n"); 
+
+}
 
 
 break;
