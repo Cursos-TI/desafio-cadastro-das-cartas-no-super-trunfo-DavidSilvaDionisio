@@ -526,9 +526,7 @@ printf("\n");
 
   
    }else{
-
-    Cont3++;
-
+  
 printf("\n");  
 printf("%d, %d\n", Populacao1, DensidadePopulacional2);  
 printf("\n"); 
@@ -553,8 +551,6 @@ printf("\n");
 
  }else{
 
-  Cont3++;
-
 printf("\n");  
 printf("%d, %d\n", PontoTuristico1, PontoTuristico2);  
 printf("\n");  
@@ -571,15 +567,13 @@ printf("\n");
  
  }else if (Area1 < Area2){
 
-   Cont2++;
+Cont2++;
 
 printf("\n");  
 printf("%d\n", Area2);  
 printf("\n"); 
 
  }else{
-
-  Cont3;
 
 printf("\n");  
 printf("%f, %f,\n", Area1, Area2);  
@@ -606,8 +600,6 @@ printf("\n");
 
  }else{
 
-  Cont3;
-
 printf("\n");  
 printf("%f\n", PIB1, PIB2);  
 printf("\n"); 
@@ -630,8 +622,6 @@ printf("%f\n", PIB_Percapito2);
 printf("\n");  
 
  }else{
-
-  Cont3;
 
 printf("\n");  
 printf("%f, %f\n", PIB_Percapito1, PIB_Percapito2);  
@@ -656,8 +646,6 @@ printf("%f\n", DensidadePopulacional2);
 printf("\n");  
 
  }else{
-
-  Cont3;
 
 printf("\n");  
 printf("%f, %f\n", DensidadePopulacional1, DensidadePopulacional2);  
